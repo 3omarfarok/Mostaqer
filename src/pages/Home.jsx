@@ -118,7 +118,6 @@ const howItWorks = [
 export default function Home() {
   return (
     <div className="space-y-16">
-
       <section className="relative bg-gradient-to-r from-dark to-dark/90 overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
@@ -320,16 +319,16 @@ export default function Home() {
       </section>
 
       {/* Partners Section */}
-      <section className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8 dark:text-light">
+      <section className="max-w-7xl mx-auto px-4 my-12 md:my-16">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 md:mb-8 dark:text-light">
           Trusted Partners
         </h2>
 
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-dark-100 p-4 rounded-lg shadow-lg text-center font-semibold hover:shadow-neon transition-all dark:text-light"
+              className="bg-white dark:bg-dark-100 p-3 md:p-4 rounded-lg shadow-lg text-center font-semibold hover:shadow-neon transition-all dark:text-light flex items-center justify-center min-h-16"
             >
               {partner}
             </div>
@@ -358,7 +357,6 @@ export default function Home() {
       </section>
 
       {/*Footer */}
-
     </div>
   );
 }

@@ -276,18 +276,18 @@ export default function AboutUs() {
   };
 
   return (
-    <div className="space-y-16 py-12">
+    <div className="space-y-12 py-8 md:space-y-16 md:py-12">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-dark to-dark/90 text-white overflow-hidden">
         {/* Decorative elements */}
-        <div className="absolute top-0 right-0 w-48 h-48 bg-primary/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-24 md:w-48 h-24 md:h-48 bg-primary/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-32 md:w-64 h-32 md:h-64 bg-primary/10 rounded-full blur-3xl"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 py-20 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 py-12 md:py-20 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
             About <span className="text-primary">Mostqer</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
             We're on a mission to revolutionize parking by making it convenient,
             accessible, and stress-free for everyone.
           </p>
@@ -296,10 +296,10 @@ export default function AboutUs() {
 
       {/* Our Story Section */}
       <section className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-1/2">
-            <div className="relative">
-              <div className="w-full h-80 bg-gray-200 dark:bg-dark-200 rounded-lg overflow-hidden">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <div className="w-full md:w-1/2">
+            <div className="relative mb-8 md:mb-0">
+              <div className="w-full h-60 sm:h-80 bg-gray-200 dark:bg-dark-200 rounded-lg overflow-hidden">
                 <img
                   src="/Mostaqer/team/CartoonGang.png"
                   alt="Mostqer Headquarters"
@@ -308,12 +308,12 @@ export default function AboutUs() {
               </div>
 
               {/* Decorative element */}
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary rounded-md"></div>
+              <div className="absolute -bottom-4 -right-4 w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-md"></div>
             </div>
           </div>
 
-          <div className="md:w-1/2">
-            <h2 className="text-3xl font-bold mb-6 dark:text-light">
+          <div className="w-full md:w-1/2">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 md:mb-6 dark:text-light">
               Our Story
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -340,14 +340,14 @@ export default function AboutUs() {
       </section>
 
       {/* Our Mission & Vision */}
-      <section className="bg-gray-50 dark:bg-dark-200 py-16">
+      <section className="bg-gray-50 dark:bg-dark-200 py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-white dark:bg-dark-100 p-8 rounded-lg shadow-lg">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+            <div className="bg-white dark:bg-dark-100 p-6 md:p-8 rounded-lg shadow-lg">
               <div className="inline-block p-4 bg-primary/10 rounded-full mb-4">
-                <FaCar className="text-3xl text-primary" />
+                <FaCar className="text-2xl sm:text-3xl text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 dark:text-light">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 md:mb-4 dark:text-light">
                 Our Mission
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
@@ -357,11 +357,11 @@ export default function AboutUs() {
               </p>
             </div>
 
-            <div className="bg-white dark:bg-dark-100 p-8 rounded-lg shadow-lg">
+            <div className="bg-white dark:bg-dark-100 p-6 md:p-8 rounded-lg shadow-lg">
               <div className="inline-block p-4 bg-primary/10 rounded-full mb-4">
-                <FaLightbulb className="text-3xl text-primary" />
+                <FaLightbulb className="text-2xl sm:text-3xl text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 dark:text-light">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 md:mb-4 dark:text-light">
                 Our Vision
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
@@ -377,18 +377,18 @@ export default function AboutUs() {
 
       {/* Our Values */}
       <section className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 dark:text-light">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 md:mb-12 dark:text-light">
           Our Core Values
         </h2>
 
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {values.map((value, index) => (
             <div
               key={index}
               className="bg-white dark:bg-dark-100 p-6 rounded-lg shadow-lg text-center hover:shadow-lg transition-all"
             >
               <div className="flex justify-center mb-4">{value.icon}</div>
-              <h3 className="text-xl font-semibold mb-2 dark:text-light">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 dark:text-light">
                 {value.title}
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
@@ -401,18 +401,18 @@ export default function AboutUs() {
 
       {/* Meet Our Team */}
       <section className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 dark:text-light">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 md:mb-12 dark:text-light">
           Meet Our Team
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {teamMembers.map((member, index) => (
             <div
               key={index}
               className="bg-white dark:bg-dark-100 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all"
             >
               {/* Team member image */}
-              <div className="h-64 bg-gray-200 dark:bg-dark-200 overflow-hidden">
+              <div className="h-48 sm:h-56 md:h-64 bg-gray-200 dark:bg-dark-200 overflow-hidden">
                 <img
                   src={member.image || `/api/placeholder/300/300`}
                   alt={member.name}
@@ -421,12 +421,12 @@ export default function AboutUs() {
               </div>
 
               {/* Team member details */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-1 dark:text-light">
+              <div className="p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold mb-1 dark:text-light">
                   {member.name}
                 </h3>
-                <p className="text-primary font-medium mb-3">{member.role}</p>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                <p className="text-primary font-medium mb-2 sm:mb-3">{member.role}</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-3 sm:mb-4">
                   {member.bio}
                 </p>
 
@@ -463,14 +463,15 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Our Growth Journey */}
-      <section className="bg-gray-50 dark:bg-dark-200 py-16">
+      {/* Our Growth Journey - COMPLETELY REDESIGNED TIMELINE FOR BETTER MOBILE RESPONSIVENESS */}
+      <section className="bg-gray-50 dark:bg-dark-200 py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 dark:text-light">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 md:mb-12 dark:text-light">
             Our Growth Journey
           </h2>
 
-          <div className="relative">
+          {/* Desktop timeline (hidden on mobile) */}
+          <div className="hidden md:block relative">
             {/* Timeline line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary/30"></div>
 
@@ -505,6 +506,37 @@ export default function AboutUs() {
               ))}
             </div>
           </div>
+
+          {/* Mobile timeline (vertical, shown only on mobile) */}
+          <div className="md:hidden relative">
+            {/* Timeline line */}
+            <div className="absolute left-4 top-0 bottom-0 w-1 bg-primary/30"></div>
+
+            {/* Timeline items */}
+            <div className="space-y-8">
+              {milestones.map((milestone, index) => (
+                <div key={index} className="relative pl-12">
+                  {/* Year circle */}
+                  <div className="absolute left-0 top-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold z-10 transform -translate-x-1/2">
+                    {milestone.year.substring(2)}
+                  </div>
+
+                  {/* Content box */}
+                  <div className="bg-white dark:bg-dark-100 p-4 rounded-lg shadow-md">
+                    <h3 className="text-lg font-bold mb-1 dark:text-light">
+                      {milestone.title}
+                    </h3>
+                    <p className="text-xs text-gray-500 mb-2">
+                      {milestone.year}
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">
+                      {milestone.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -512,15 +544,15 @@ export default function AboutUs() {
       <section className="max-w-7xl mx-auto px-4">
         <div className="bg-white dark:bg-dark-100 rounded-lg shadow-lg overflow-hidden">
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 bg-gradient-to-r from-dark to-dark/90 text-white p-8 md:p-12">
-              <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
-              <p className="text-gray-300 mb-8">
+            <div className="md:w-1/2 bg-gradient-to-r from-dark to-dark/90 text-white p-6 md:p-8 lg:p-12">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 md:mb-6">Get In Touch</h3>
+              <p className="text-gray-300 mb-6 md:mb-8">
                 Have questions about Mostqer or interested in partnering with
                 us? Contact our team today!
               </p>
 
               <div className="space-y-4">
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-3 md:gap-4">
                   <FaMapMarkerAlt className="text-primary mt-1" />
                   <div>
                     <h4 className="font-semibold">Address</h4>
@@ -530,7 +562,7 @@ export default function AboutUs() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-3 md:gap-4">
                   <FaEnvelope className="text-primary mt-1" />
                   <div>
                     <h4 className="font-semibold">Email</h4>
@@ -540,14 +572,14 @@ export default function AboutUs() {
               </div>
             </div>
 
-            <div className="md:w-1/2 p-8 md:p-12">
-              <h3 className="text-2xl font-bold mb-6 dark:text-light">
+            <div className="md:w-1/2 p-6 md:p-8 lg:p-12">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 md:mb-6 dark:text-light">
                 Send Us a Message
               </h3>
 
               {/* Success message */}
               {formSuccess && (
-                <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded flex items-center">
+                <div className="mb-4 md:mb-6 p-3 md:p-4 bg-green-100 border border-green-400 text-green-700 rounded flex items-center text-sm">
                   <FaCheckCircle className="mr-2" />
                   <span>
                     Thank you! Your message has been sent successfully.
@@ -565,14 +597,14 @@ export default function AboutUs() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`w-full px-4 py-2 border ${
+                    className={`w-full px-3 md:px-4 py-2 border ${
                       errors.name
                         ? "border-red-500"
                         : "border-gray-300 dark:border-gray-600"
                     } rounded-lg focus:ring-2 focus:ring-primary focus:border-primary dark:bg-dark-200 dark:text-light`}
                   />
                   {errors.name && (
-                    <p className="mt-1 text-sm text-red-500 flex items-center">
+                    <p className="mt-1 text-xs sm:text-sm text-red-500 flex items-center">
                       <FaExclamationCircle className="mr-1" /> {errors.name}
                     </p>
                   )}
@@ -587,14 +619,14 @@ export default function AboutUs() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`w-full px-4 py-2 border ${
+                    className={`w-full px-3 md:px-4 py-2 border ${
                       errors.email
                         ? "border-red-500"
                         : "border-gray-300 dark:border-gray-600"
                     } rounded-lg focus:ring-2 focus:ring-primary focus:border-primary dark:bg-dark-200 dark:text-light`}
                   />
                   {errors.email && (
-                    <p className="mt-1 text-sm text-red-500 flex items-center">
+                    <p className="mt-1 text-xs sm:text-sm text-red-500 flex items-center">
                       <FaExclamationCircle className="mr-1" /> {errors.email}
                     </p>
                   )}
@@ -609,14 +641,14 @@ export default function AboutUs() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    className={`w-full px-4 py-2 border ${
+                    className={`w-full px-3 md:px-4 py-2 border ${
                       errors.message
                         ? "border-red-500"
                         : "border-gray-300 dark:border-gray-600"
                     } rounded-lg focus:ring-2 focus:ring-primary focus:border-primary dark:bg-dark-200 dark:text-light`}
                   ></textarea>
                   {errors.message && (
-                    <p className="mt-1 text-sm text-red-500 flex items-center">
+                    <p className="mt-1 text-xs sm:text-sm text-red-500 flex items-center">
                       <FaExclamationCircle className="mr-1" /> {errors.message}
                     </p>
                   )}
@@ -624,7 +656,7 @@ export default function AboutUs() {
 
                 <button
                   type="submit"
-                  className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-all inline-flex items-center gap-2"
+                  className="bg-primary text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-primary/90 transition-all inline-flex items-center gap-2"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}{" "}
@@ -637,19 +669,19 @@ export default function AboutUs() {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-gradient-to-r from-dark to-dark/90 text-white py-16 rounded-xl text-center">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6">
+      <section className="bg-gradient-to-r from-dark to-dark/90 text-white py-10 md:py-16 rounded-xl text-center px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 md:mb-6">
             Ready to Experience Mostqer?
           </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-300 mb-6 md:mb-8 max-w-2xl mx-auto">
             Join thousands of satisfied customers who have made parking
             stress-free with Mostqer
           </p>
 
           <Link
             to="/find-parking"
-            className="bg-primary text-white px-8 py-4 rounded-lg shadow-neon hover:bg-primary/90 transition-all text-lg font-semibold inline-block"
+            className="bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-neon hover:bg-primary/90 transition-all text-base sm:text-lg font-semibold inline-block"
           >
             Find Parking Now
           </Link>
