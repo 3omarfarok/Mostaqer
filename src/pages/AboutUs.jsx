@@ -487,7 +487,7 @@ export default function AboutUs() {
                   {/* Content box - alternate sides */}
                   <div
                     className={`w-5/12 ${
-                      index % 2 === 0 ? "ml-auto pr-8" : "mr-auto pl-8"
+                      index % 2 === 0 ? "ml-auto" : "mr-auto"
                     }`}
                   >
                     <div className="bg-white dark:bg-dark-100 p-6 rounded-lg shadow-md">
