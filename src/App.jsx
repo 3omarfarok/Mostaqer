@@ -25,7 +25,7 @@ function App() {
   const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Mostaqer">
       <AuthProvider>
         <BookingProvider>
           <div
