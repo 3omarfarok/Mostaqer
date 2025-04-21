@@ -65,9 +65,9 @@ function Footer() {
 
         {/* Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <p className="text-gray-600 dark:text-gray-400 text-center md:text-left">
+          <a href="https://github.com/3omarfarok" target="blank" className="text-gray-600 dark:text-gray-400 text-center md:text-left">
             &copy; {new Date().getFullYear()} Mostqer. All rights reserved.
-          </p>
+          </a>
 
           <div className="flex mt-4 md:mt-0 space-x-6">
             <Link
