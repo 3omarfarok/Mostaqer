@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs.jsx"
+import AboutUs from "./pages/AboutUs.jsx";
 import FindParking from "./pages/FindParking";
-import Footer from "./components/Footer.jsx"
+import Footer from "./components/Footer.jsx";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile.jsx";
@@ -25,7 +25,7 @@ function App() {
   const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
   return (
-    <BrowserRouter basename="/Mostaqer">
+    <HashRouter basename="/Mostaqer">
       <AuthProvider>
         <BookingProvider>
           <div
@@ -44,11 +44,11 @@ function App() {
             </div>
             <Toaster position="top-center" />
             {/* <Footer/> */}
-            <Footer/>
+            <Footer />
           </div>
         </BookingProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
